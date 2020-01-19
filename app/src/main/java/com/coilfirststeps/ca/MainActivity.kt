@@ -37,5 +37,17 @@ class MainActivity : AppCompatActivity() {
             crossfade(500)
             transformations(BlurTransformation(applicationContext, 5f))
         }
+
+        image5.load(Constants.URL_IMAGE) {
+            crossfade(true)
+            crossfade(500)
+            transformations(GrayscaleTransformation())
+        }
+
+        image6.load(Constants.URL_IMAGE) {
+            crossfade(true)
+            crossfade(500)
+            transformations(BlurTransformation(applicationContext))
+        }
     }
 }
